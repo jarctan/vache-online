@@ -1,0 +1,8 @@
+[BASIC]
+
+good-names=i, j, k, f
+ignored-classes=scoped_session
+ignored-modules=flask_login
+
+[MESSAGES CONTROL]
+disable=W0718,R1705,R0903,C0413,C0415

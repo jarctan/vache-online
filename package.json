@@ -1,0 +1,9 @@
+{
+  "name": "pilo-backend",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "fomantic-ui": "^2.9.2",
+    "gulp": "^4.0.2"
+  }
+}

@@ -1,0 +1,4 @@
+[tool.autopep8]
+ignore = ["E402"]
+
+[tool.pyright]

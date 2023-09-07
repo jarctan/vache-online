@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Vache playground{% endblock %}
+{% block content %}
+<div style="display: flex; margin-top: 20px; margin-bottom: 30px; gap: 5px; position: relative; border: 2px dashed white; border-radius: 2px;">
+    <span style="position: absolute; top: -30px; left: 0px">
+    You can try...
+    </span>
+    <button class="example" id="hello-world-example-btn">
+        Hello, world!
+    </button>
+    <button class="example" id="fibonacci-example-btn">
+        Fibonacci
+    </button>
+    <button class="example" id="quicksort-example-btn">
+        Quicksort
+    </button>
+</div>
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; gap: 3px">
+    <button class="square" id="run-button">
+        <span class="material-symbols-rounded" style="font-size: 20px">
+            play_arrow
+        </span>
+    </button>
+    <button class="square" id="copy-button">
+        <span class="material-symbols-rounded" style="font-size: 20px">
+            content_copy
+        </span>
+    </button>
+</div>
+<div style="flex: 1; min-height: 250px; display: flex; flex-direction: row; flex-wrap: wrap; gap: 10px">
+<div style="flex: 2; min-width: 300px; border: 2px solid white; border-radius: 5px; position: relative;">
+    <div id="editor" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0;"></div>
+</div>
+<div style="flex: 1; min-width: 300px; border: 2px solid white; border-radius: 5px; position: relative;">
+    <div id="output" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0;"></div>
+</div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='playground.js') }}"></script>
+{% endblock %}
